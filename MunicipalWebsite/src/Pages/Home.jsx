@@ -16,6 +16,7 @@ import VisitCard from '../Components/VisitCard/VisitCard';
 import visitData from '../visitdata/visitdata';
 import aboutData from '../AboutData/AboutData';
 import About from '../Components/About/About';
+import { Link } from 'react-router';
 
 function Home() {
   return (
@@ -89,22 +90,32 @@ function Home() {
         <h2 className="text-4xl text-slate-800 text-center mt-3 mb-3 font-bold">Catch Our Services</h2>
 
         {/* Service Cards */}
-        <div className="flex flex-col gap-4 items-evenly md:flex-row text-slate-800">
+        <div className="flex flex-col gap-4 items-evenly md:flex-row md: justify-evenly text-slate-800">
+
+          <Link to="/Services">
           <LinkCards
             img={OnlineServices}
             title="Online Services"
             description="Quick access to services for everyone"
           />
+          </Link> 
+
+          <Link to="/Complaints">
           <LinkCards
             img={Complaint}
             title="Make Complaints"
             description="Report issues about services for improvement"
           />
+          </Link>
+
+          <Link to="Suggestions">
           <LinkCards
             img={suggest}
             title="Give Suggestions"
             description="Submit suggestions for better services"
           />
+          </Link>
+          
         </div>
 
         <MayorMessage />
@@ -123,6 +134,18 @@ function Home() {
             />
           ))}
         </div>
+        <div className='flex flex-wrap m-4 justify-center items-center'>
+               <Link to="places">
+            <button className="relative px-6 py-3 cursor-pointer font-semibold text-slate-900 bg-gradient-to-r 
+            from-emerald-300 via-emerald-400 to-emerald-500 rounded-xl shadow-md hover:shadow-2xl hover:-translate-y-1
+             transition-all duration-300">
+            <span className="relative z-10">Show More Places</span>
+            <span className="absolute inset-0 rounded-xl bg-emerald-200 opacity-0 transition-opacity
+             duration-300 hover:opacity-30"></span>
+          </button>
+          </Link>
+        </div>
+           
 
         {/* Notice Section */}
         <h2 className="text-4xl text-slate-800 text-center mt-3 mb-3 font-bold">Recent Notices</h2>
@@ -136,6 +159,19 @@ function Home() {
             date={notice.date}
           />
         ))}
+
+        <div className='flex flex-wrap justify-center items-center m-4'>
+          <Link to="Notices">
+                  <button className="relative px-6 py-3 font-semibold text-white
+                   bg-gradient-to-r from-blue-600 to-blue-800 rounded-full shadow-md transition-all 
+                   duration-300 hover:scale-105 hover:shadow-lg hover:from-blue-500 hover:to-blue-700">
+          <span className="relative z-10">Show More Notices</span>
+          <span className="absolute inset-0 rounded-full bg-blue-400 
+          opacity-0 blur-md transition-opacity duration-300 group-hover:opacity-40"></span>
+        </button>
+
+          </Link>
+        </div>
 
         <h2 className="text-4xl text-slate-800 text-center mt-3 mb-3 font-bold">About</h2>
         <div className="flex flex-wrap flex-col md:flex-row justify-evenly text-slate-800">

@@ -2,7 +2,7 @@ import React from 'react'
 
 function Notices({ title, description, img, date, category }) {
   return (
-    <div className="flex justify-center items-center p-4">
+    <div className="flex justify-center items-center p-4 bg-slate-200">
       <div className="w-full flex flex-col h-[400px] rounded-2xl overflow-hidden shadow-lg 
                       md:flex-row md:w-3/4 md:h-[220px] lg:h-[280px] 
                       bg-white border border-blue-200 hover:shadow-blue-300/40 transition-all duration-500">

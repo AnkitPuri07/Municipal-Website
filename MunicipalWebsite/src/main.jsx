@@ -11,12 +11,18 @@ import {
 import Layout from './Layout.jsx';
 import Home from './Pages/Home.jsx'
 import NoticesPage from './Pages/NoticesPage.jsx';
+import ServicesPage from './Pages/ServicesPage.jsx';
+import ComplainPage from './Pages/ComplainPage.Jsx';
+import SuggestionPage from './Pages/SuggestionPage.jsx';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route element={<Layout />}>
       <Route path="/" element={<Home />} />
       <Route path="/Notices" element={<NoticesPage/>} />
+       <Route path="/Services" element={<ServicesPage/>} />
+        <Route path="/Complaints" element={<ComplainPage/>} />
+         <Route path="/Suggestions" element={<SuggestionPage/>} />
     </Route>
   )
 );
