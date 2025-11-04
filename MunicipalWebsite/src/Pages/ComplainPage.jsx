@@ -34,7 +34,7 @@ function ComplainPage() {
         onSubmit={sendEmail}
         className="bg-white/90 backdrop-blur-md shadow-xl rounded-2xl p-8 w-full max-w-lg border border-slate-200"
       >
-        <h1 className="text-2xl md:text-3xl font-bold text-center mb-6 text-blue-800">
+        <h1 className="text-2xl md:text0-3xl font-bold text-center mb-6 text-blue-80">
           Submit Your Complaint
         </h1>
 

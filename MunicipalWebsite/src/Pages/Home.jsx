@@ -149,7 +149,7 @@ function Home() {
 
         {/* Notice Section */}
         <h2 className="text-4xl text-slate-800 text-center mt-3 mb-3 font-bold">Recent Notices</h2>
-        {NoticesInfo.slice(0, 2).map((notice) => (
+        {NoticesInfo.slice(0, 3).map((notice) => (
           <Notices
             key={notice.id}
             title={notice.title}
