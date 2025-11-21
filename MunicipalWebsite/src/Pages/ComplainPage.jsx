@@ -9,10 +9,10 @@ function ComplainPage() {
 
     emailjs
       .sendForm(
-        "service_1bl9lnn",       
-        "template_9c95bef",      
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,    
         form.current,
-        "wLZ0VGVvP3CdW9KRT"      
+         import.meta.env.VITE_EMAILJS_PUBLIC_KEY    
       )
       .then(
         (result) => {
