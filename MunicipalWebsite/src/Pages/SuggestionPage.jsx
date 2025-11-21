@@ -28,7 +28,7 @@ function SuggestionPage() {
   };
 
   return (
-    <div className="min-h-screen flex justify-center items-center bg-gradient-to-br from-pink-50 via-purple-50 to-rose-100 p-6">
+    <div className="mt-8 min-h-screen flex justify-center items-center bg-gradient-to-br from-pink-50 via-purple-50 to-rose-100 p-6">
       <form
         ref={form}
         onSubmit={sendEmail}

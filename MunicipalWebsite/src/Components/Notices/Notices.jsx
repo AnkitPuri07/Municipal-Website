@@ -9,7 +9,7 @@ function Notices({ title, description, img, date, category }) {
         
         {/* Text Section */}
         <div className="w-full h-[55%] flex flex-col justify-center items-center gap-2 lg:gap-4 
-                        bg-gradient-to-r from-blue-600 via-blue-500 to-blue-400 
+                        bg-gradient-to-r from-violet-800 to-red-400 
                         p-6 md:h-full md:w-2/3 md:rounded-l-2xl md:rounded-r-none text-white">
           <h1 className="text-xl md:text-2xl font-bold tracking-wide">{category}</h1>
           <h2 className="text-lg md:text-xl font-semibold mt-1 text-white/95">{title}</h2>

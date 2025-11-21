@@ -28,7 +28,7 @@ function ComplainPage() {
   };
 
   return (
-    <div className="min-h-screen flex justify-center items-center bg-gradient-to-br from-slate-100 via-blue-50 to-slate-200 p-6">
+    <div className="min-h-screen flex justify-center items-center mt-8 bg-gradient-to-br from-slate-100 via-blue-50 to-slate-200 p-6">
       <form
         ref={form}
         onSubmit={sendEmail}

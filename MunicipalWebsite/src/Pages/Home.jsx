@@ -21,7 +21,7 @@ import { Link } from 'react-router';
 function Home() {
   return (
     <>
-      <div className="min-h-screen bg-slate-200 text-slate-800">
+      <div className="min-h-screen mt-8 bg-slate-200 text-slate-800">
         {/* Hero Section */}
         <div className="flex flex-col md:flex-row gap-4 p-4">
   {/* Left big section */}
@@ -135,7 +135,7 @@ function Home() {
           ))}
         </div>
         <div className='flex flex-wrap m-4 justify-center items-center'>
-               <Link to="places">
+               <Link to="Visit">
             <button className="relative px-6 py-3 cursor-pointer font-semibold text-slate-900 bg-gradient-to-r 
             from-emerald-300 via-emerald-400 to-emerald-500 rounded-xl shadow-md hover:shadow-2xl hover:-translate-y-1
              transition-all duration-300">

@@ -14,6 +14,7 @@ import NoticesPage from './Pages/NoticesPage.jsx';
 import ServicesPage from './Pages/ServicesPage.jsx';
 import ComplainPage from './Pages/ComplainPage.Jsx';
 import SuggestionPage from './Pages/SuggestionPage.jsx';
+import Visit from './Pages/Visit.jsx';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -23,6 +24,7 @@ const router = createBrowserRouter(
        <Route path="/Services" element={<ServicesPage/>} />
         <Route path="/Complaints" element={<ComplainPage/>} />
          <Route path="/Suggestions" element={<SuggestionPage/>} />
+          <Route path="/Visit" element={<Visit/>} />
     </Route>
   )
 );

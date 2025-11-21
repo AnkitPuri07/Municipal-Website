@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 function Navbar() {
   return (
     <>
-    <div  className="flex flex-wrap justify-evenly bg-slate-800 text-slate-50 shadow-md p-2">
+    <div  className="fixed top-0 left-0 w-full flex z-50 flex-wrap justify-evenly bg-slate-800 text-slate-50 shadow-md p-2">
        <span className="font-bold text-white text-lg md:w-1/3">Municipality</span>
        <NavLink
             to="/"
