@@ -12,7 +12,7 @@ import Layout from './Layout.jsx';
 import Home from './Pages/Home.jsx'
 import NoticesPage from './Pages/NoticesPage.jsx';
 import ServicesPage from './Pages/ServicesPage.jsx';
-import ComplainPage from './Pages/ComplainPage.Jsx';
+import ComplainPage from './Pages/ComplainPage.jsx';
 import SuggestionPage from './Pages/SuggestionPage.jsx';
 import Visit from './Pages/Visit.jsx';
 
