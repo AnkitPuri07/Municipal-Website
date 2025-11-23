@@ -117,7 +117,7 @@ function Home() {
           </Link>
           
         </div>
-
+        {/* Mayor message section */}
         <MayorMessage />
 
         <h2 className="text-4xl text-slate-800 text-center mt-3 mb-3 font-bold">Best places to VISIT</h2>
